@@ -1,9 +1,3 @@
-#--------------------------------------------------------
-#EDP 646A
-#Functions for calculations based on Hotellings T2 Tests
-#James Smith
-#University of Arizona
-#---------------------------------
 #September 27, 2018
 #	- Effect sizes for
 #     -Sample population
