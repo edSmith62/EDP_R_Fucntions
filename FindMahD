@@ -13,6 +13,9 @@
 Function effect size using Hotellings T2 test
 #-----------------------------------------------------------------------
 
+#Requires DescTools package
+library(DescTools)
+
 #Function multiplies T2 by the inverse of the weighting to get 
 #Mahalanobis distance for T2 test or paired T2 tests
 
