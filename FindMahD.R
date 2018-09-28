@@ -1,11 +1,10 @@
-#September 27, 2018
+#------------------------------------------------------------------------
+#Function effect size using Hotellings T2 test
+# Calculating Effect size using Hotellings T2 test
 #	- Effect sizes for
 #     -Sample population
 #     -Group comparisons
 #----------------------------------------------------
-#------------------------------------------------------------------------
-Function effect size using Hotellings T2 test
-#-----------------------------------------------------------------------
 
 #Requires DescTools package
 library(DescTools)
