@@ -1,0 +1,37 @@
+#--------------------------------------------------------
+#EDP 646A
+#Functions for calculations based on Hotellings T2 Tests
+#James Smith
+#University of Arizona
+#---------------------------------
+#September 27, 2018
+#	- Effect sizes for
+#     -Sample population
+#     -Group comparisons
+#----------------------------------------------------
+#------------------------------------------------------------------------
+Function effect size using Hotellings T2 test
+#-----------------------------------------------------------------------
+
+#Function multiplies T2 by the inverse of the weighting to get 
+#Mahalanobis distance for T2 test or paired T2 tests
+
+MahEff <- function(data = data, g1 = NULL, g2 = NULL){
+
+	if(is.null(g1) == TRUE & is.null(g2) == TRUE){
+	q <- ncol(data); n <- nrow(data)
+	T2 <- HotellingsT2Test(data, test = "f")$statistic
+  EffectSize <- ((q*(n-1))/(n*(n-q)))*T2
+	return(EffectSize)
+	}
+	else{ 
+	q <- ncol(data)
+	n <- nrow(data) - 1
+	T2 <- HotellingsT2Test(x = g1, y = g2 , test = "f")$statistic
+	EffectSize <-((q*(n-1))/(n-q))* T2
+	}
+	return(EffectSize)
+}
+ 
+  
+  
