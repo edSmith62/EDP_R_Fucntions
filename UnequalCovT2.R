@@ -1,8 +1,3 @@
-#--------------------------------------------------------
-#EDP 646A
-#James Smith
-#University of Arizona
-#---------------------------------
 #September 27, 2018
 #	- Hotellings T2 Test for Groups with Unequal Cov
 #   -T2
